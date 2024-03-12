@@ -1,99 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Job History</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFFFFF; /* White background */
+            color: #333333; /* Dark gray text color */
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px; /* Adjusted margin-top */
+            margin-bottom: 30px; /* Added margin-bottom */
+            color: #1C1018; /* Slate gray text color */
+        }
+
+        h2, h3, h4 {
+            text-align: center;
+            margin-top: 40px; /* Added margin-top */
+            margin-bottom: 20px; /* Added margin-bottom */
+            color: #1C1018; /* Slate gray text color */
+        }
+
+        ul {
+            margin-bottom: 30px; /* Added margin-bottom */
+            color: #1C1018; /* Slate gray text color */
+        }
+
+        a {
+            color: #C1FBA4; /* Mint green link color */
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        a:hover {
+            color: #008DD5; /* Mint green hover color */
+        }
+
+        img {
+            border: 5px solid #1C1018; /* Slate gray border */
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added box-shadow */
+            margin-bottom: 20px; /* Added margin-bottom */
+            transition: transform 0.3s ease-in-out; /* Added transition for hover animation */
+        }
+
+        img:hover {
+            transform: translateY(-5px); /* Added hover animation */
+        }
+
+        .zoom-in {
+            animation: zoomIn 0.5s ease-in-out;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px; /* Added margin-bottom */
+            color: #333333; /* Dark gray text color */
+        }
+
+        .container {
+            margin-top: 30px; /* Added margin-top */
+            margin-bottom: 30px; /* Added margin-bottom */
+        }
+
+        .section {
+            background-color: #f8f9fa; /* Light gray background */
+            padding: 30px;
+            margin-bottom: 40px; /* Added margin-bottom */
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added box-shadow */
+        }
+    </style>
 </head>
+
 <body>
 
-  <style>
-    body {
-      background-color: #1C1018;
-    }
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Oliver Jarjosa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    h1 {
-      color: #D8D8F6;
-    }
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./jobs.html">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./education.html">Education</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    
-    h2, h3 {
-      color: #D8D8F6;
-      text-align: center;
-    }
-
-    h4 {
-      color: #D8D8F6;
-    }
-
-    ul {
-      color: #D8D8F6;
-    }
-    a {
-      color: #C1FBA4;
-      
-    }
-
-    a:hover {
-      color: #008DD5; 
-    }
-
-    img {
-      border: dotted;
-      border-color: burlywood;
-      border-width: 5px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
-
-    p {
-      color: #D8D8F6;
-    }
-  </style>
     <h1>Job History</h1>
 
-    <h2>ProScan Imaging</h2>
-      <img src="./Midtown_Loction-Image_3-980x653.jpg" alt="Photo of the ProScan Imaging office building">
-    <!--Add photo and list job responsibilities-->
-    <h3>Data Entry Specialist - Fulltime</h3>
-      <p>May 2023 - Current</p>
-      <h4><i>Responsibilities</i></h4>
-      <ul>
-        <li>Securely handled client and patient data and payment details</li>
-        <li>Organized correspondence to secure information relating to patient insurance</li>
-        <li>Conveyed attention to detail and proficiency in utilizing ERP software.</li>
-    </ul>
-   
-    <h2>Blueboard Inc.</h2>
-      <img src="./Longworth-Hall-1.jpeg" alt="">
-      <!--Add photo and list job responsibilities-->
-      <h3>Experience Researcher - Fulltime</h3>
-        <p>November 2022 - May 2023</p>
-      <h4><i>Responsibilities</i></h4>
-      <ul>
-        <li>Provided customers with best deals and well-researched travel options.</li>
-        <li>Maintained operational proficiency in coordinating both international and domestic travel accommodations for customers, arranging for airfare as well as hotel and rental car reservations.</li>
-        <li>Collaborated with colleagues to implement best practices across department and exceed team goals.</li>
-        <li>Organized memorable and exquisite travel itineraries and vacations for high-level clients and business executives.</li>
-      </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="section">
+                    <h2>ProScan Imaging</h2>
+                    <img src="./Midtown_Loction-Image_3-980x653.jpg" alt="Photo of the ProScan Imaging office building" class="zoom-in">
+                    <h3>Data Entry Specialist - Fulltime</h3>
+                    <p>May 2023 - Current</p>
+                    <h4><i>Responsibilities</i></h4>
+                    <ul>
+                        <li>Securely handled client and patient data and payment details</li>
+                        <li>Organized correspondence to secure information relating to patient insurance</li>
+                        <li>Conveyed attention to detail and proficiency in utilizing ERP software.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-      <h2>Fidelity Investments</h2>
-      <img src="./fidelity4.webp" alt="Image of the front of Fidelity Investments campus in Covington, KY.">
-      <!--Add photo and list job responsibilities-->
-      <h3>Financial Services Representative - Fulltime</h3>
-        <p>July 2022 - November 2022 </p>
-      <h4><i>Responsibilities</i></h4>
-      <ul>
-        <li>Engaged with participants with an empathetic, informative manner.</li>
-        <li>Practiced active listening and clarifying questioning in order to narrow down a participant's underlying needs.</li>
-        <li>Educated and explained the details within client plans and broke down options available to participants regarding their 401k finances.</li>
-        <li>De-escalated calls which were emotionally charged and maintained a professional, understanding demeanor when conversations couldn't be immediately refocused.</li>
-      </ul>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="section">
+                    <h2>Blueboard Inc.</h2>
+                    <img src="./Longworth-Hall-1.jpeg" alt="Photo of Blueboard Inc. office building" class="zoom-in">
+                    <h3>Experience Researcher - Fulltime</h3>
+                    <p>November 2022 - May 2023</p>
+                    <h4><i>Responsibilities</i></h4>
+                    <ul>
+                        <li>Provided customers with best deals and well-researched travel options.</li>
+                        <li>Maintained operational proficiency in coordinating both international and domestic travel accommodations for customers, arranging for airfare as well as hotel and rental car reservations.</li>
+                        <li>Collaborated with colleagues to implement best practices across department and exceed team goals.</li>
+                        <li>Organized memorable and exquisite travel itineraries and vacations for high-level clients and business executives.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <!--Links to other pages-->
-    <a href="./education.html">Education</a>
-<a href="./index.html"> About Me</a>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="section">
+                    <h2>Fidelity Investments</h2>
+                    <img src="./fidelity4.webp" alt="Photo of Fidelity Investments campus in Covington, KY" class="zoom-in">
+                    <h3>Financial Services Representative - Fulltime</h3>
+                    <p>July 2022 - November 2022</p>
+                    <h4><i>Responsibilities</i></h4>
+                    <ul>
+                        <li>Engaged with participants with an empathetic, informative manner.</li>
+                        <li>Practiced active listening and clarifying questioning in order to narrow down a participant's underlying needs.</li>
+                        <li>Educated and explained the details within client plans and broke down options available to participants regarding their 401k finances.</li>
+                        <li>De-escalated calls which were emotionally charged and maintained a professional, understanding demeanor when conversations couldn't be immediately refocused.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <p>&copy; 2024 Oliver Jarjosa</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

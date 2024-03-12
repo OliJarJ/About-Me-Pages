@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
+    <title>Contact</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome CSS -->
@@ -89,11 +89,43 @@
             margin-bottom: 40px; /* Increased margin-bottom */
         }
 
-        .row:first-child {
+        .row:nth-child(odd) {
             background-color: #f8f9fa; /* Light gray background for odd rows */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added box-shadow */
+        }
+
+        .contact-form {
+            background-color: #f8f9fa; /* Light gray background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added box-shadow */
+        }
+
+        .form-group {
+            margin-bottom: 20px; /* Added margin-bottom */
+        }
+
+        .form-control {
+            border-color: #333333; /* Dark gray border color */
+        }
+
+        .form-control:focus {
+            border-color: #1C1018; /* Slate gray focus color */
+            box-shadow: none; /* Remove default box-shadow */
+        }
+
+        .btn {
+            background-color: #1C1018; /* Slate gray background */
+            border-color: #1C1018; /* Slate gray border */
+            color: #D8D8F6; /* Mint green text color */
+        }
+
+        .btn:hover {
+            background-color: #008DD5; /* Mint green hover background */
+            border-color: #008DD5; /* Mint green hover border */
+            color: #D8D8F6; /* Mint green hover text color */
         }
     </style>
 </head>
@@ -111,7 +143,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="./index.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./jobs.html">Jobs</a>
@@ -127,65 +159,28 @@
         </div>
     </nav>
 
-    <h1>Education</h1>
+    <h1>Contact</h1>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-3 my-5">
-                <h2>Kable Academy - <i>Cincinnati, OH</i></h2>
-                <h4>Certificate of Web Development</h4>
-                <p>2024</p>
-                <img src="./kable-academy.jpg" alt="Kable Academy logo">
-                <ul>
-                    <li>Passed the CIW exam.</li>
-                    <li>Earned my Certificate of Web Development March 27th 2024.</li>
-                </ul>
-                
-                  <ul id="skills-list" class="justify-content-center" style="text-align: start; list-style: none; display:inline-flex; ;">
-                      <li class="px-4 text-primary">
-                          <p><i id="skills-icons" class="fa-brands fa-html5 fa-2xl"></i></p>
-                      </li>
-                      <li class="px-4 text-primary">
-                          <p><i id="skills-icons" class="fa-brands fa-css3 fa-2xl"></i></p>
-                      </li>
-
-
-                      <li class="px-4 text-primary">
-                          <p><i id="skills-icons" class="fa-brands fa-js fa-2xl"></i></p>
-                      </li>
-
-                  </ul>
-             
-            </div>
-            
-        </div>
+    <div class="container my-5 py-5">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <h2>University of Cincinnati - <i>Cincinnati, OH</i></h2>
-                <h4>BA of Psychology</h4>
-                <p>2016 - 2021</p>
-                <img src="./cincinnati-bearcats-logo-png-transparent.png" alt="UC logo">
-                <ul>
-                    <li>Originally began in the DAAP Fine Art program, but switched to a focus in Psychology.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <h2>University of Louisville - <i>Louisville, KY</i></h2>
-                <h4>College Credits Earned</h4>
-                <p>2018 - 2019</p>
-                <img src="./3dp_uofl_logo.jpg" alt="Photo of the University of Louisville's campus.">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <h2>Oldfields - <i>Baltimore, MD</i></h2>
-                <h4>High School Diploma</h4>
-                <p>2012 - 2016</p>
-                <img src="./Y2jXTiDE_400x400.jpg" alt="Image of Oldfield's High School logo">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
