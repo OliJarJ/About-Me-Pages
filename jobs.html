@@ -11,53 +11,53 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #FFFFFF; /* White background */
-            color: #333333; /* Dark gray text color */
+            background-image: url('./imgs/halllights.jpg');
+            color: #333333; 
             font-family: 'Arial Black', sans-serif;
         }
 
         h1 {
             text-align: center;
-            margin-top: 20px; /* Adjusted margin-top */
-            margin-bottom: 30px; /* Added margin-bottom */
-            color: #1C1018; /* Slate gray text color */
+            margin-top: 20px; 
+            margin-bottom: 30px; 
+            color: #1C1018; 
         }
 
         h2, h3, h4 {
             text-align: center;
-            margin-top: 40px; /* Added margin-top */
-            margin-bottom: 20px; /* Added margin-bottom */
-            color: #1C1018; /* Slate gray text color */
+            margin-top: 40px; 
+            margin-bottom: 20px; 
+            color: #1C1018;
         }
 
         ul {
-            margin-bottom: 30px; /* Added margin-bottom */
-            color: #1C1018; /* Slate gray text color */
+            margin-bottom: 30px; 
+            color: #1C1018; 
         }
 
         a {
-            color: #C1FBA4; /* Mint green link color */
+            color: #C1FBA4; 
             text-decoration: none;
             margin-right: 20px;
         }
 
         a:hover {
-            color: #008DD5; /* Mint green hover color */
+            color: #008DD5; 
         }
 
         img {
-            border: 5px solid #1C1018; /* Slate gray border */
+            border: 5px solid #1C1018;
             border-radius: 10px;
             display: block;
             margin: 0 auto;
             width: 50%;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added box-shadow */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
             margin-bottom: 20px; /* Added margin-bottom */
             transition: transform 0.3s ease-in-out; /* Added transition for hover animation */
         }
 
         img:hover {
-            transform: translateY(-5px); /* Added hover animation */
+            transform: translateY(-5px); /* hover animation */
         }
 
         .zoom-in {
@@ -91,6 +91,21 @@
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added box-shadow */
         }
+
+        footer {
+           
+           width: 100%; 
+           bottom: 0; /* Align to the bottom */
+           background-color: #1C1018; 
+           color: #D8D8F6; 
+           padding: 10px 0;
+           text-align: center;
+           z-index: -50;
+       }
+
+       footer p {
+           margin-bottom: 0; /* Remove default margin */
+       }
     </style>
 </head>
 
@@ -107,7 +122,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="./index.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./jobs.html">Jobs</a>
@@ -123,14 +138,14 @@
     </div>
 </nav>
 
-    <h1>Job History</h1>
+    <h1 class="text-white display-4" style="margin-top: 15vh; margin-bottom: 5vh;">Job History</h1>
 
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <div class="section">
                     <h2>ProScan Imaging</h2>
-                    <img src="./Midtown_Loction-Image_3-980x653.jpg" alt="Photo of the ProScan Imaging office building" class="zoom-in">
+                    <img src="./imgs/Midtown_Loction-Image_3-980x653.jpg" alt="Photo of the ProScan Imaging office building" class="zoom-in">
                     <h3>Data Entry Specialist - Fulltime</h3>
                     <p>May 2023 - Current</p>
                     <h4><i>Responsibilities</i></h4>
@@ -147,7 +162,7 @@
             <div class="col-md-6 offset-md-3">
                 <div class="section">
                     <h2>Blueboard Inc.</h2>
-                    <img src="./Longworth-Hall-1.jpeg" alt="Photo of Blueboard Inc. office building" class="zoom-in">
+                    <img src="./imgs/Longworth-Hall-1.jpeg" alt="Photo of Blueboard Inc. office building" class="zoom-in">
                     <h3>Experience Researcher - Fulltime</h3>
                     <p>November 2022 - May 2023</p>
                     <h4><i>Responsibilities</i></h4>
@@ -165,7 +180,7 @@
             <div class="col-md-6 offset-md-3">
                 <div class="section">
                     <h2>Fidelity Investments</h2>
-                    <img src="./fidelity4.webp" alt="Photo of Fidelity Investments campus in Covington, KY" class="zoom-in">
+                    <img src="./imgs/fidelity4.webp" alt="Photo of Fidelity Investments campus in Covington, KY" class="zoom-in">
                     <h3>Financial Services Representative - Fulltime</h3>
                     <p>July 2022 - November 2022</p>
                     <h4><i>Responsibilities</i></h4>
@@ -181,14 +196,14 @@
     </div>
 
     <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <p>&copy; 2024 Oliver Jarjosa</p>
-              </div>
-          </div>
-      </div>
-  </footer>
+        <div class="container">
+            
+                <div class="col-md-12">
+                    <p class="text-white">&copy; 2024 Oliver Jarjosa</p>
+                </div>
+            
+        </div>
+    </footer>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

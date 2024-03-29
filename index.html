@@ -11,10 +11,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa; /* Light gray background */
+            background-image: url('./imgs/halllights.jpg');
             color: #1C1018; /* Dark text color */
             font-family: 'Arial Black', sans-serif; /* Changed font to Arial Black */
-            margin-bottom: 100px; /* Added margin-bottom for footer */
+            position: relative; /* Ensure footer's positioning is relative to body */
         }
 
         h1 {
@@ -85,13 +85,13 @@
         }
 
         footer {
-            position: fixed; /* Fixed positioning for footer */
             width: 100%; /* Full width for footer */
-            bottom: 0; /* Align to the bottom */
             background-color: #1C1018; /* Slate gray background */
             color: #D8D8F6; /* Mint green text color */
             padding: 10px 0;
             text-align: center;
+            position: fixed; /* Fixed positioning */
+            bottom: 0; /* Stick to the bottom */
         }
 
         footer p {
@@ -113,7 +113,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="./index.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./jobs.html">Jobs</a>
@@ -129,35 +129,35 @@
         </div>
     </nav>
 
-    <div class="masthead">
-        <div class="container">
-            <img src="./20240119_105246.jpg" alt="Oliver sits on the couch as he takes a photo with his cat Jellybean.">
-            <div class="socials">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-
     <main>
         <div class="container">
             <div class="card-container">
-              <div class="card my-5 py-5 px-5">
-                <h3>About Me</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim, nulla nec rhoncus pretium, libero magna fermentum justo, a fermentum lectus quam quis magna. Sed vitae metus quis lacus auctor gravida.</p>
-            </div>
                 <div class="card my-5 py-5 px-5">
-                    <h2>History</h2>
+                    <h3 class="text-center py-4">About Me</h3>
+                    <p>As a Data Entry Specialist at ProScan Imaging, I handle confidential patient data and insurance
+                        information with accuracy and security. I communicate with clients to ensure timely and smooth
+                        processing of cases, and I organize written correspondence to request relevant patient details.
+                        I also have a keen attention to detail and proficiency in using ERP software, which enables me
+                        to optimize my workflow and performance.</p>
+
+                    <p> In addition to my current role, I am pursuing a certification of Web Development through the
+                        Kable Academy, where I am learning and applying coding skills in HTML, CSS, BootStrap,
+                        JavaScript, and various frameworks. I have a Bachelor of Arts in Psychology from the University
+                        of Cincinnati, where I graduated with honors and developed critical thinking and research skills.
+                        I am passionate about learning new technologies and creating user-friendly, engaging web
+                        applications that combine my creativity and problem-solving abilities.</p>
+                </div>
+                <div class="card my-5 py-5 px-5">
+                    <h2 class="text-center py-4">History</h2>
                     <ul>
                         <li><b>1997:</b> I was born on November 13 in Hamilton, OH.</li>
-                        <li><b>2004:</b> My brother was born the day after my 7th birthday.</li>
+                        <li><b>2004:</b> My brother was born the                        <li><b>2004:</b> My brother was born the day after my 7th birthday.</li>
                         <li><b>2009:</b> Was diagnosed with an autoimmune disease at the age of 12.</li>
                         <li><b>2016:</b> Graduated from high school.</li>
                         <li><b>2018:</b> Became engaged to my significant other.</li>
                         <li><b>2019:</b> Moved back to Cincinnati, OH.</li>
                         <li><b>2021:</b> Proud graduate with a BA in Psychology from the esteemed University of Cincinnati.</li>
-                        <li><b>2024:</b> Eager student at Kable Academy, hungry for knowledge and growth.</li>
+                        <li><b>2024:</b> Graduate of Kable Academy & hungry for knowledge and growth.</li>
                     </ul>
                 </div>
             
@@ -182,3 +182,4 @@
 </body>
 
 </html>
+

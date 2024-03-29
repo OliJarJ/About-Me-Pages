@@ -11,41 +11,42 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #FFFFFF; /* White background */
+            
             color: #333333; /* Dark gray text color */
             font-family: 'Arial Black', sans-serif;
+            background-image: url('./imgs/halllights.jpg');
         }
 
         h1 {
             text-align: center;
-            color: #333333; /* Dark gray text color */
+            color: #333333; 
             margin-top: 40px; /* Added margin-top */
             margin-bottom: 30px; /* Added margin-bottom */
         }
 
         h2, h3, h4 {
             text-align: center;
-            color: #333333; /* Dark gray text color */
+            color: #333333; 
             margin-top: 20px; /* Added margin-top */
             margin-bottom: 10px; /* Added margin-bottom */
         }
 
         ul {
-            color: #333333; /* Dark gray text color */
+            color: #333333; 
             margin-bottom: 20px; /* Added margin-bottom */
         }
 
         a {
-            color: #D8D8F6; /* Mint green link color */
+            color: #D8D8F6; 
             text-decoration: none;
         }
 
         a:hover {
-            color: #008DD5; /* Mint green hover color */
+            color: #008DD5; 
         }
 
         img {
-            border: 5px solid #333333; /* Dark gray border */
+            border: 5px solid #333333; 
             border-radius: 10px;
             display: block;
             margin: 0 auto;
@@ -62,7 +63,7 @@
 
         .navbar {
             background-color: #1C1018; /* Slate gray background */
-            color: #D8D8F6; /* Mint green text color */
+            color: #D8D8F6;
             padding: 10px 0;
             position: fixed; /* Fixed positioning for navbar */
             width: 100%; /* Full width for navbar */
@@ -71,30 +72,45 @@
         }
 
         .navbar a {
-            color: #D8D8F6; /* Mint green link color */
+            color: #D8D8F6; 
             text-decoration: none;
             margin-right: 20px;
         }
 
         .navbar a:hover {
-            color: aqua; /* Mint green hover color */
+            color: aqua; 
         }
 
         .container {
-            margin-top: 30px; /* Added margin-top */
-            margin-bottom: 30px; /* Added margin-bottom */
+            margin-top: 30px; 
+            margin-bottom: 30px; 
         }
 
         .row {
-            margin-bottom: 40px; /* Increased margin-bottom */
+            margin-bottom: 40px; 
         }
 
         .row:first-child {
-            background-color: #f8f9fa; /* Light gray background for odd rows */
+            background-color: #f8f9fa; 
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added box-shadow */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
         }
+        footer {
+           
+            width: 100%; /* Full width for footer */
+            bottom: 0; /* Align to the bottom */
+            background-color: #1C1018; /* Slate gray background */
+            color: #D8D8F6; /* Mint green text color */
+            padding: 10px 0;
+            text-align: center;
+            z-index: -50;
+        }
+
+        footer p {
+            margin-bottom: 0; /* Remove default margin */
+        }
+       
     </style>
 </head>
 
@@ -111,7 +127,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="./index.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./jobs.html">Jobs</a>
@@ -127,21 +143,21 @@
         </div>
     </nav>
 
-    <h1>Education</h1>
+    <h1 class="text-white display-4" style="margin-top: 15vh">Education</h1>
 
-    <div class="container">
+    <div class="container my-5">
         <div class="row">
             <div class="col-md-6 offset-md-3 my-5">
                 <h2>Kable Academy - <i>Cincinnati, OH</i></h2>
                 <h4>Certificate of Web Development</h4>
                 <p>2024</p>
-                <img src="./kable-academy.jpg" alt="Kable Academy logo">
+                <img src="./imgs/kable-academy.jpg" alt="Kable Academy logo">
                 <ul>
                     <li>Passed the CIW exam.</li>
                     <li>Earned my Certificate of Web Development March 27th 2024.</li>
                 </ul>
                 
-                  <ul id="skills-list" class="justify-content-center" style="text-align: start; list-style: none; display:inline-flex; ;">
+                  <!-- <ul id="skills-list" style="text-align: center; list-style: none; display:inline-flex; ;">
                       <li class="px-4 text-primary">
                           <p><i id="skills-icons" class="fa-brands fa-html5 fa-2xl"></i></p>
                       </li>
@@ -154,51 +170,55 @@
                           <p><i id="skills-icons" class="fa-brands fa-js fa-2xl"></i></p>
                       </li>
 
-                  </ul>
+                  </ul> -->
              
             </div>
             
         </div>
+        <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <h2>University of Cincinnati - <i>Cincinnati, OH</i></h2>
-                <h4>BA of Psychology</h4>
-                <p>2016 - 2021</p>
-                <img src="./cincinnati-bearcats-logo-png-transparent.png" alt="UC logo">
+                <h2 class="">University of Cincinnati - <i>Cincinnati, OH</i></h2>
+                <h4 class="">BA of Psychology</h4>
+                <p class="">2016 - 2021</p>
+                <img src="./imgs/cincinnati-bearcats-logo-png-transparent.png" alt="UC logo">
                 <ul>
-                    <li>Originally began in the DAAP Fine Art program, but switched to a focus in Psychology.</li>
+                    <li class="">Originally began in the DAAP Fine Art program, but switched to a focus in Psychology.</li>
                 </ul>
             </div>
         </div>
-
+    </div>
+    <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <h2>University of Louisville - <i>Louisville, KY</i></h2>
                 <h4>College Credits Earned</h4>
                 <p>2018 - 2019</p>
-                <img src="./3dp_uofl_logo.jpg" alt="Photo of the University of Louisville's campus.">
+                <img src="./imgs/3dp_uofl_logo.jpg" alt="Photo of the University of Louisville's campus.">
             </div>
         </div>
-
+    </div>
+    <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <h2>Oldfields - <i>Baltimore, MD</i></h2>
                 <h4>High School Diploma</h4>
                 <p>2012 - 2016</p>
-                <img src="./Y2jXTiDE_400x400.jpg" alt="Image of Oldfield's High School logo">
+                <img src="./imgs/Y2jXTiDE_400x400.jpg" alt="Image of Oldfield's High School logo">
             </div>
         </div>
     </div>
+</div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>&copy; 2024 Oliver Jarjosa</p>
-                </div>
+<footer>
+    <div class="container">
+        
+            <div class="col-md-12">
+                <p class="text-white">&copy; 2024 Oliver Jarjosa</p>
             </div>
-        </div>
-    </footer>
+        
+    </div>
+</footer>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

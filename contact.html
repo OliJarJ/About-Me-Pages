@@ -86,7 +86,7 @@
         }
 
         .row {
-            margin-bottom: 40px; /* Increased margin-bottom */
+            margin-bottom: 40px; 
         }
 
         .row:nth-child(odd) {
@@ -97,35 +97,55 @@
         }
 
         .contact-form {
-            background-color: #f8f9fa; /* Light gray background */
+            background-color: #f8f9fa; /* 
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added box-shadow */
+            /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); Added box-shadow */
         }
 
         .form-group {
-            margin-bottom: 20px; /* Added margin-bottom */
+            margin-bottom: 20px; 
         }
 
         .form-control {
-            border-color: #333333; /* Dark gray border color */
+            border-color: #333333; 
         }
 
         .form-control:focus {
-            border-color: #1C1018; /* Slate gray focus color */
-            box-shadow: none; /* Remove default box-shadow */
+            border-color: #1C1018; 
+            box-shadow: none; 
         }
 
         .btn {
-            background-color: #1C1018; /* Slate gray background */
-            border-color: #1C1018; /* Slate gray border */
-            color: #D8D8F6; /* Mint green text color */
+            background-color: #1C1018; 
+            border-color: #1C1018; 
+            color: #D8D8F6; 
         }
 
         .btn:hover {
-            background-color: #008DD5; /* Mint green hover background */
-            border-color: #008DD5; /* Mint green hover border */
-            color: #D8D8F6; /* Mint green hover text color */
+            background-color: #008DD5; 
+            border-color: #008DD5; 
+            color: #D8D8F6; 
+        }
+
+        body {
+            background-image: url('./imgs/halllights.jpg');
+        }
+
+        footer {
+            width: 100%;
+            position: fixed; /* Fixed positioning */
+            bottom: 0; /* Align to the bottom */
+            left: 0; /* Align to the left */
+            background-color: #1C1018;
+            color: #D8D8F6;
+            padding: 10px 0;
+            margin: 0; /* Remove default margin */
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -159,7 +179,7 @@
         </div>
     </nav>
 
-    <h1>Contact</h1>
+    <h1 class="text-white" style="margin-top: 15vh;">Contact</h1>
 
     <div class="container my-5 py-5">
         <div class="row">
@@ -178,7 +198,9 @@
                             <label for="message">Message</label>
                             <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
                         </div>
+                        <div class="text-center">
                         <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
                     </form>
                 </div>
             </div>
@@ -187,10 +209,8 @@
 
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>&copy; 2024 Oliver Jarjosa</p>
-                </div>
+            <div class="col-md-12">
+                <p class="text-white">&copy; 2024 Oliver Jarjosa</p>
             </div>
         </div>
     </footer>
